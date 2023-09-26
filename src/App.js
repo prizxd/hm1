@@ -85,9 +85,9 @@ function App() {
           </ul>
         </div>
         <div className='right'>
-          <p>Subcribe for Offers</p>
+          <p>Subscribe for Offers</p>
           <input type='text' placeholder='Email Address'></input>
-          <button className='subcribe'>Subcribe  Now</button>
+          <button className='subscribe'>Subscribe  Now</button>
         </div>
       </footer>
     </div>
