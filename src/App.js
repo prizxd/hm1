@@ -5,70 +5,93 @@ function App() {
   return (
     <div className="App">
       <header className="container">
-        <img src="./img/download_1.png" />
+        <img src="./img/download_1.png" alt='download_1.png' />
         <div className="menu">
-          <li>Our Hotel</li>
-          <li>Rooms & Rates</li>
-          <li>Facilities</li>
-          <li>Contact Us</li>
+          <a href='#'>Our Hotel</a>
+          <a href='#'>Rooms & Rates</a>
+          <a href='#'>Facilities</a>
+          <a href='#'>Contact Us</a>
         </div>
       </header>
       <main>
         <div className='f-block container'>
-          <select>
-            <option></option>
-            <option></option>
-            <option></option>
-            <option></option>
-          </select>
-          <input type='date' />
-          <input type='date' />
-          <button className='check-a'>Check Availability</button>
+          <form>
+            <select id='city'>
+              <option hidden>Select a City</option>
+              <option>City</option>
+              <option>City</option>
+              <option>City</option>
+            </select>
+
+            <input type='date' />
+
+            <input type='date' placeholder='Check Out' />
+            <button className='check-a'>Check Availability</button>
+          </form>
         </div>
         <div className='s-block'>
           <div className='welcome'>
-            <h1>WELCOME TO BON HOTEL</h1>
-            <p>Good people. Good thinking. Good feeling.</p>
+            <div>
+              <h1>WELCOME TO BON HOTEL</h1>
+              <p>Good people. Good thinking. Good feeling.</p>
+            </div>
             <button className='explore'>EXPLORE</button>
           </div>
           <div className='facilities'>
             <h1>Facilities</h1>
             <ul>
-              <li>Kitchen</li>
-              <li>Pool</li>
-              <li>Wifi</li>
-              <li>Gym</li>
-              <li>Taxi</li>
+              <li>
+                <img src='./img/kitchen.svg' />
+                <p>Kitchen</p>
+              </li>
+              <li>
+                <img src='./img/pool.svg' />
+                <p>Pool</p>
+              </li>
+              <li>
+                <img src='./img/wifi.svg' />
+                <p>Wifi</p>
+              </li>
+              <li>
+                <img src='./img/gym.svg' />
+                <p>Gym</p>
+              </li>
+              <li>
+                <img src='./img/taxi.svg' />
+                <p>Taxi</p>
+              </li>
             </ul>
           </div>
         </div>
         <div className='th-block'>
           <h1 className='rooms-rates'>Rooms & Rates</h1>
-          <ul className='flex-rooms'>
-            <li>
-              <p></p>
+          <div className='flex-rooms'>
+            <a href='#'>
+              <p>Standard Twin Room</p>
               <button>Check Rates</button>
-            </li>
-            <li>
-              <p></p>
+            </a>
+            <a href='#'>
+              <p>Standard Room</p>
               <button>Check Rates</button>
-            </li>
-            <li>
-              <p></p>
+            </a>
+            <a href='#'>
+              <p>Standard View Room</p>
               <button>Check Rates</button>
-            </li>
-            <li>
-              <p></p>
+            </a>
+            <a href='#'>
+              <p>Deluxe Room</p>
               <button>Check Rates</button>
-            </li>
-          </ul>
+            </a>
+          </div>
+        </div>
+        <div className='fr-block'>
           <p className='get-room'>Get a room already!</p>
           <button className='book-now'>Book Now</button>
         </div>
       </main>
       <footer>
         <div className='left'>
-          <img src='./img/download_2.png'></img>
+          <img src='./img/download_2.png' alt='download_2.png'></img>
           <div>
             <p>Bon Hotels Head Office</p>
             <p>+27 434 344 432</p>
@@ -76,13 +99,13 @@ function App() {
           </div>
         </div>
         <div className='center'>
-          <ul className='links'>
-            <li><a href='#'>Our Hotels</a></li>
-            <li><a href='#'>Our Conferencing</a></li>
-            <li><a href='#'>Our Company</a></li>
-            <li><a href='#'>Hotel Design</a></li>
-            <li><a href='#'>Careers</a></li>
-          </ul>
+          <div className='links'>
+            <a href='#'>Our Hotels</a>
+            <a href='#'>Our Conferencing</a>
+            <a href='#'>Our Company</a>
+            <a href='#'>Hotel Design</a>
+            <a href='#'>Careers</a>
+          </div>
         </div>
         <div className='right'>
           <p>Subscribe for Offers</p>
