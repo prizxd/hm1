@@ -1,0 +1,32 @@
+@import "../../style/templates.scss";
+
+header {
+  height: 241px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div.menu,
+header div.menu a {
+  color: #957554;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+header img {
+  margin-top: 34px;
+}
+
+header div.menu {
+  font-family: inherit;
+  margin-bottom: 30px;
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -1,0 +1,141 @@
+@import "../../style/templates.scss";
+
+footer {
+  background-color: #111;
+  padding: 60px 60px 130px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #fff;
+  height: 469px;
+}
+
+footer div.left {
+  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer div.left div {
+  width: 263px;
+  height: 83px;
+  flex-shrink: 0;
+}
+
+footer div.left div p:nth-child(1) {
+  color: #fff;
+  font-family: inherit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+footer div.left div p:nth-child(2) {
+  color: #fff;
+  font-family: inherit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+footer div.left div p:nth-child(3) {
+  color: #fff;
+  font-family: inherit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+footer div.center {
+  width: 194px;
+  height: 249px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer div.center div.links {
+  width: 194px;
+  height: 249px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: inherit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer div.center div.links a {
+  color: #fff;
+}
+
+footer div.right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer div.left img {
+  width: 154px;
+  height: 126px;
+  flex-shrink: 0;
+}
+
+footer div.right p {
+  color: #fff;
+  font-family: inherit;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+footer div.right input {
+  width: 371px;
+  height: 75px;
+  flex-shrink: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 23px 27px;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+footer div.right input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: inherit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+footer div.right button {
+  width: 371px;
+  height: 75px;
+  @include buttons;
+  padding: 23px 0 24px;
+  font-size: 24px;
+  font-weight: 500;
+}
