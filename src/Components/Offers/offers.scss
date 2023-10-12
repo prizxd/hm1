@@ -1,3 +1,19 @@
+@mixin templTitle {
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+}
+
+@mixin templPrice {
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 40px;
+  font-size: 30px;
+}
+
 .offer-block {
   width: 100%;
   height: 225px;
@@ -37,31 +53,16 @@
   @include templPrice;
 }
 
-#blackTitle {
+#blueTitle {
   background-color: #4c99aa;
   @include templTitle;
 }
 
-#blackPrice {
+#bluePrice {
   background-color: #5fbed1;
   @include templPrice;
 }
 
-// #offer-block h1.title {
-//   color: white;
-//   text-align: center;
-//   width: 100%;
-//   padding: 15px;
-//   font-size: 20px;
-// }
-
-// .offer-block p.price {
-//   color: white;
-//   text-align: center;
-//   width: 100%;
-//   padding: 40px;
-//   font-size: 30px;
-// }
 .offer-block p.speed {
   color: black;
   text-align: center;
@@ -77,20 +78,4 @@
   background-color: #efedee;
   padding: 15px;
   font-size: 16px;
-}
-
-@mixin templTitle {
-  color: white;
-  text-align: center;
-  width: 100%;
-  padding: 15px;
-  font-size: 20px;
-}
-
-@mixin templPrice {
-  color: white;
-  text-align: center;
-  width: 100%;
-  padding: 40px;
-  font-size: 30px;
 }

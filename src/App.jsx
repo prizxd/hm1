@@ -8,8 +8,8 @@ const tarrifs = [
     price: 300,
     speed: 10,
     text: "Объем включенного трафика не ограничен",
-    colorTitle: "blackTitle",
-    colorPrice: "blackPrice",
+    colorTitle: "blueTitle",
+    colorPrice: "bluePrice",
   },
   {
     title: "Безлимитный 450",
